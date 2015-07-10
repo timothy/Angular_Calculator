@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="calc">
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Latest compiled Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+    <meta charset="UTF-8">
+    <script src="app.js"></script>
+    <title>Calculator</title>
+</head>
+
+
+<body  data-ng-controller="calcController">
+
+<h1>Tim's calculator attempt ^_^</h1>
+<div class="container">
+<h3>
+<span class="label label-default">{{"Calculate: " + calcNumber}}</span>
+</h3>
+    <div class="btn-group">
+<br>
+<button type="button" class="btn btn-primary" data-ng-click="numberPress(7)">7</button>
+<button type="button" class="btn btn-primary" data-ng-click="numberPress(8)">8</button>
+<button type="button" class="btn btn-primary" data-ng-click="numberPress(9)">9</button>
+<button type="button" class="btn btn-primary" data-ng-click="operationPress('/', 2)">/</button>
+<br>
+<button type="button" class="btn btn-primary" data-ng-click="numberPress(4)">4</button>
+<button type="button" class="btn btn-primary" data-ng-click="numberPress(5)">5</button>
+<button type="button" class="btn btn-primary" data-ng-click="numberPress(6)">6</button>
+<button type="button" class="btn btn-primary" data-ng-click="operationPress('*', 1)">*</button>
+<br>
+<button type="button" class="btn btn-primary" data-ng-click="numberPress(1)">1</button>
+<button type="button" class="btn btn-primary" data-ng-click="numberPress(2)">2</button>
+<button type="button" class="btn btn-primary" data-ng-click="numberPress(3)">3</button>
+<button type="button" class="btn btn-primary" data-ng-click="operationPress('-', 3)">-</button>
+<br>
+<button type="button" class="btn btn-primary" data-ng-click="numberPress(0)">0</button>
+<button type="button" class="btn btn-primary" data-ng-click="clearPress()">C</button>
+<button type="button" class="btn btn-primary" data-ng-click="operationPress('=', 0)">=</button>
+<button type="button" class="btn btn-primary" data-ng-click="operationPress('+', 4)">+</button>
+</div>
+    </div>
+</body>
+</html>
